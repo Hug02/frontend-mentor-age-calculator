@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.ico">
   <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
   
   <title>Frontend Mentor | Age calculator app</title>
 </head>
@@ -29,7 +30,7 @@
     </div>
 
     <div class="separator">
-      <div class="arrow-wrapper">
+      <div class="arrow-wrapper" onclick="computeDate()">
         <img src="./assets/images/icon-arrow.svg" alt="icon-arrow">
         <!-- <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg> -->
       </div>
@@ -37,13 +38,13 @@
 
     <div class="date-output-container">
       <div class="date-output">
-        <span id="years-output">38</span> years
+        <span id="years-output">--</span> years
       </div>
       <div class="date-output">
-        <span id="month-output">3</span> months
+        <span id="months-output">--</span> months
       </div>
       <div class="date-output">
-        <span id="days-output">26</span> days
+        <span id="days-output">--</span> days
       </div>
     </div>
   </div>

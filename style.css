@@ -5,16 +5,42 @@
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 850px) {
+  html body .wrapper {
+    min-width: 600px;
+    max-width: 700px;
+    padding: 35px;
+  }
+  html body .wrapper .date-input-container {
+    justify-content: flex-start;
+    gap: 25px;
+  }
+  html body .wrapper .date-input-container .date-input {
+    width: 105px;
+  }
+  html body .wrapper .separator {
+    margin: 25px 0;
+  }
+  html body .wrapper .separator .arrow-wrapper {
+    left: auto;
+    right: 0%;
+    transform: translateY(-50%);
+  }
+  html body .wrapper .date-output-container .date-output {
+    font-size: 4em;
+  }
+}
 body {
   background-color: hsl(0, 0%, 86%);
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 body .wrapper {
   background-color: white;
   border-radius: 20px;
   border-bottom-right-radius: 25%;
-  margin: 100px 20px 0 20px;
   width: 325px;
   padding: 35px 20px;
   display: flex;

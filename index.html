@@ -4,34 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="date-input-container">
+      <div class="date-input">
+        <input type="text" placeholder="DD" id="day">
+        <label for="day">DAY</label>
+      </div>
+      
+      <div class="date-input">
+        <input type="text" placeholder="MM" id="month">
+        <label for="month">MONTH</label>
+      </div>
 
-  Day
-  DD
+      <div class="date-input">
+        <input type="text" placeholder="YYYY" id="year">
+        <label for="year">YEAR</label>
+      </div>
+    </div>
 
-  Month
-  MM
+    <div class="separator">
+      <div class="arrow-wrapper">
+        <img src="./assets/images/icon-arrow.svg" alt="icon-arrow">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg> -->
+      </div>
+    </div>
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="date-output-container">
+      <div class="date-output">
+        <span id="years-output">38</span> years
+      </div>
+      <div class="date-output">
+        <span id="month-output">3</span> months
+      </div>
+      <div class="date-output">
+        <span id="days-output">26</span> days
+      </div>
+    </div>
   </div>
 </body>
 </html>

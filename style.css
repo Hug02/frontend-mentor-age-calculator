@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Poppins:ital,wght@0,700;1,400;1,700;1,800&family=Rubik:wght@400;500;700&family=Unbounded:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 86%);
+  display: flex;
+  justify-content: center;
+}
+body .wrapper {
+  background-color: white;
+  border-radius: 20px;
+  border-bottom-right-radius: 25%;
+  margin: 100px 20px 0 20px;
+  width: 325px;
+  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins";
+}
+body .wrapper .date-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+body .wrapper .date-input-container .date-input {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 90px;
+}
+body .wrapper .date-input-container .date-input label {
+  font-weight: 700;
+  font-size: 0.8em;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 0.18em;
+  margin-bottom: 5px;
+}
+body .wrapper .date-input-container .date-input input {
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1.2em;
+}
+body .wrapper .date-input-container .date-input input:focus-visible {
+  outline-color: hsl(259, 100%, 65%);
+  outline-width: 1px;
+  outline-style: solid;
+}
+body .wrapper .separator {
+  margin: 60px 0;
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+  position: relative;
+}
+body .wrapper .separator .arrow-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: hsl(259, 100%, 65%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+}
+body .wrapper .separator .arrow-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+body .wrapper .date-output-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body .wrapper .date-output-container .date-output {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 3.2em;
+  line-height: 1.2em;
+}
+body .wrapper .date-output-container .date-output span {
+  color: hsl(259, 100%, 65%);
+}
+
+/*# sourceMappingURL=style.css.map */

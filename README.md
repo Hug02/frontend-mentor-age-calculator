@@ -45,4 +45,4 @@ Users should be able to:
 
 ### Useful resources
 
-- [Animation for numbers](https://codepen.io/Unleashed-Design/pen/wvGgzPO)
+<!-- - [Animation for numbers](https://codepen.io/Unleashed-Design/pen/wvGgzPO) -->

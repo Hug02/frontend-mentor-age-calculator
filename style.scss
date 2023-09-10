@@ -2,7 +2,7 @@
 
 
 $primary: hsl(259, 100%, 65%);
-$background: hsl(0, 0%, 86%);
+$background: hsl(0, 0%, 94%);
 
 
 * {
@@ -83,7 +83,7 @@ body {
                 }
 
                 input {
-                    border: 1px solid $background;
+                    border: 1px solid hsl(0, 0%, 86%);
                     border-radius: 10px;
                     padding: 10px 15px;
                     font-family: 'Poppins';

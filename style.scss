@@ -69,6 +69,7 @@ body {
             gap: 10px;
 
             .date-input {
+                position: relative;
                 display: flex;
                 flex-direction: column-reverse;
                 width: 90px;
@@ -95,6 +96,20 @@ body {
                         outline-style: solid;
                     }
                 }
+
+                .error {
+                    position: absolute;
+                    color: hsl(0, 100%, 67%);
+                    font-weight: 400;
+                    font-style: italic;
+                    font-size: .7em;
+                    white-space: nowrap;
+                    bottom: -20px;
+                    display: none;
+                    &.active {
+                        display: inline;
+                    }
+                }
             }
         }
 
@@ -115,6 +130,7 @@ body {
                 border-radius: 50px;
                 width: 55px;
                 height: 55px;
+                cursor: pointer;
                 img {
                     height: 100%;
                     width: 100%;
